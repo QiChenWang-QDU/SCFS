@@ -40,15 +40,3 @@ class HashTable:
                 result.append(item)
         return result
 
-if __name__ == '__main__':
-
-    hash_table = HashTable(10)
-    hash_table.insert(5, (1,2))
-    hash_table.insert(15, "B")
-    hash_table.insert(25, "C")
-    hash_table.insert(5, "D")  # 添加重复键的值
-    print("遍历哈希表：", hash_table.traverse())
-    print(hash_table.search(5))  # 输出：['A', 'D']
-    print(hash_table.search(15))  # 输出：['B']
-    print(hash_table.search(25))  # 输出：['C']
-    print(hash_table.search(35))  # 输出：[]

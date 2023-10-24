@@ -59,8 +59,8 @@ def ComputeConvergenceFactor(s,indexs):
 
 
 def sort_with_index(arr):
-    sorted_arr = sorted(arr, reverse=True)  # 对数组进行降序排序
-    sorted_index = [i for i, _ in sorted(enumerate(arr), key=lambda x: x[1], reverse=True)]  # 获取排序后的索引
+    sorted_arr = sorted(arr, reverse=True)
+    sorted_index = [i for i, _ in sorted(enumerate(arr), key=lambda x: x[1], reverse=True)]  
 
     return sorted_arr, sorted_index
 
